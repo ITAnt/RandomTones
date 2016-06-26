@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/selector_tone_item"
+    android:descendantFocusability="beforeDescendants" >
+    
+    <TextView
+        android:id="@+id/tv_tone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:background="@null" />
+
+</RelativeLayout>

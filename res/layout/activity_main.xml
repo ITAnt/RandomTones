@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.itant.randomtones.activity.MainActivity"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_add_tones"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/selector_add"
+        android:text="@string/label_add_tones"
+        android:gravity="center" />
+        
+    <Button 
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_clear_current_list"
+        android:visibility="gone"
+        android:background="@drawable/selector_clear"/>
+    
+    <ListView 
+        android:id="@+id/lv_random_list"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_clear"
+        android:visibility="gone">
+        
+    </ListView>
+
+</RelativeLayout>
